@@ -71,7 +71,7 @@ class MisPublicaciones extends Component {
                         <h3>Peticiones pendientes de aceptar</h3>
                         {
                             this.props.amigos && this.props.amigos
-                                .filter(a => a.estado === 4 || a.estado === 1)
+                                .filter(a => a.estado === 4)
                                 .map((a) => (
                                     <Row>
                                         <Col>{a.nombre}</Col>
